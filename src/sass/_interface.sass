@@ -1,0 +1,93 @@
+.btn
+  color: $white
+  border-radius: 24px
+  background-color: $white
+  background-image: linear-gradient(-18deg, $active 0%, #2e76a0 50%, $active 100%)
+  font-size: 15px
+  font-weight: 700
+  letter-spacing: 0.3px
+  border: 2px solid $active
+  height: 52px
+  width: 187px
+
+.btn-o
+  border: 2px solid $white
+  background-color: transparent
+  background-image: none
+
+
+.slider
+
+  &-arrow
+    position: absolute
+    height: 100%
+    width: 22px
+    top: 0
+    z-index: 2
+
+    &:hover
+      cursor: pointer
+
+    &_left
+      left: 25px
+      background: url(../img/slider/arrow-right.png) center no-repeat
+      transform: rotate(-180deg)
+
+    &_right
+      right: 25px
+      background: url(../img/slider/arrow-right.png) center no-repeat
+
+
+.menu
+
+  &-btn
+    border-radius: 5px
+    padding: 2px
+    display: flex
+    justify-content: center
+    align-items: center
+    cursor: pointer
+    position: fixed
+    z-index: 1050
+    top: 55px
+    left: 50px
+    width: 40px
+    height: 40px
+    border: 2px solid rgba(#f4f4f4, 0.5)
+    
+    &__elem, &__elem:after, &__elem:before
+      display: inline-block
+      height: 2px
+      background-color: lighten($active, 10)
+      
+    &__elem
+      position: relative
+      width: 80%
+
+      &:after, &:before
+        width: 100%
+        position: absolute
+        content: ''
+        transition: all 0.2s
+
+      &:after
+        top: 9px
+
+      &:before
+        bottom: 9px
+
+    &.active &__elem
+
+      background-color: transparent
+
+      &:before, &:after
+        top: 0
+        background-color: lighten($active, 40)
+
+      &:before
+        transform: rotate(135deg)
+
+      &:after
+        transform: rotate(-135deg)
+
+

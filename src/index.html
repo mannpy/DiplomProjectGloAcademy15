@@ -5,63 +5,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Выпускной проект">
     <meta name="author" content="Azat Mannanov">
+    <title>Large Transport Ships</title>
     <!-- <link rel="icon" href="../../../../favicon.ico"> -->
-
-    <title>Корпоративный сайт</title>
-
-    <!-- Custom styles for this template -->
+    <!-- slick slider -->
+    <link rel="stylesheet" href="libs/slick/slick.css">
+    <link rel="stylesheet" href="libs/slick/slick-theme.css">
     <link href="css/style.css" rel="stylesheet">
   </head>
-
   <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-            <div class="dropdown-menu" aria-labelledby="dropdown01">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
+    <div class="main">
+      <div class="container">
+        <div class="header">
+          <div class="header__descr">Импортно-экспортная компания</div>
+          <!-- /.header__descr -->
+          <div class="header-logo header__logo">
+            <div class="header-logo__abbr">LTS</div>
+            <!-- /.header-logo__abbr -->
+            <div class="header-logo__exp">Large Transport Ships</div>
+            <!-- /.header-logo__exp -->
+          </div>
+          <!-- /.header__logo -->
+          <div class="header__contact">
+            <a href="tel:7987655-25-25">7 (987) 655-25-25</a>
+            <button class="btn btn-o header__btn">
+              <span class="hidden-mobile">Заказать звонок</span>
+              <svg class="hidden-desktop" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+              <path d="m192 1240q0 27 10 70.5t21 68.5q21 50 122 106 94 51 186 51 27 0 53-3.5t57.5-12.5 47-14.5 55.5-20.5 49-18q98-35 175-83 127-79 264-216t216-264q48-77 83-175 3-9 18-49t20.5-55.5 14.5-47 12.5-57.5 3.5-53q0-92-51-186-56-101-106-122-25-11-68.5-21t-70.5-10q-14 0-21 3-18 6-53 76-11 19-30 54t-35 63.5-31 53.5q-3 4-17.5 25t-21.5 35.5-7 28.5q0 20 28.5 50t62 55 62 53 28.5 46q0 9-5 22.5t-8.5 20.5-14 24-11.5 19q-76 137-174 235t-235 174q-2 1-19 11.5t-24 14-20.5 8.5-22.5 5q-18 0-46-28.5t-53-62-55-62-50-28.5q-14 0-28.5 7t-35.5 21.5-25 17.5q-25 15-53.5 31t-63.5 35-54 30q-70 35-76 53-3 7-3 21z"/>
+              </svg>
+          </button>
+          </div>
+          <!-- /.header__contact -->
+          
+        </div>
+        <!-- /.header -->
+        <div class="menu-btn hidden-desktop"><span class="menu-btn__elem"></span></div>
+        <nav class="header-menu">
+          <ul class="header-menu__items">
+            <li class="header-menu__item"><a href="#" class="header-menu__link active">О компании</a></li>
+            <!-- /.menu-items__item -->
+            <li class="header-menu__item"><a href="#" class="header-menu__link">Услуги</a></li>
+            <!-- /.menu-items__item -->
+            <li class="header-menu__item"><a href="#" class="header-menu__link">Новости</a></li>
+            <!-- /.menu-items__item -->
+            <li class="header-menu__item"><a href="#" class="header-menu__link">Калькулятор</a></li>
+            <!-- /.menu-items__item -->
+            <li class="header-menu__item"><a href="#" class="header-menu__link">Контакты</a></li>
+            <!-- /.menu-items__item -->
+            <li class="header-menu__item hidden-mobile">
+              <div class="header-menu__search">
+                <img src="img/header/seacrh-icon.svg" alt="Поиск" class="header-menu__icon">
+              </div>
+              <!-- /.header-menu__search -->
+              <input type="text" name="search" class="header-menu__inp">
+            </li>
+            <!-- /.menu-items__item -->
+          </ul>
+          <!-- /.menu-items header-menu__items -->
+        </nav>
+        <!-- /.header-menu -->
+      </div>
+      <!-- /.container -->
+      
+      <div class="main-slider">
+        <div class="main-slider__slide main-slide_first">
+          <div class="container">
+            <div class="row">
+              <div class="main-slider__title">Грузы из Китая <br>с компанией "LTS"</div>
+              <!-- /.main-slider__title -->
+              <div class="main-slider__descr">Экспорт и импорт грузов из Китая любым видом транспорта. Без переплат и точно в срок!</div>
+              <!-- /.main-slider__descr -->
+              <button class="btn main-slider__btn">Быстрая заявка</button>
             </div>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
-      </div>
-    </nav>
+            <!-- /.row -->
+          </div>
+          <!-- /.container -->
+          
+        </div>
+        <!-- /.main-slider__slide -->
+        <div class="main-slider__slide main-slide_second">
+          <div class="container">
+            <div class="row">
+              <div class="main-slider__title">Грузы из Кореи <br>с компанией "LTS"</div>
+              <!-- /.main-slider__title -->
+              <div class="main-slider__descr">Экспорт и импорт грузов из Кореи любым видом транспорта. Без переплат и точно в срок!</div>
+              <!-- /.main-slider__descr -->
+              <button class="btn main-slider__btn">Быстрая заявка</button>
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- /.container -->
+        </div>
+        <!-- /.main-slider__slide -->
+        <div class="main-slider__slide main-slide_first">
+          <div class="container">
+            <div class="row">
+              <div class="main-slider__title">Грузы из Японии <br>с компанией "LTS"</div>
+              <!-- /.main-slider__title -->
+              <div class="main-slider__descr">Экспорт и импорт грузов из Японии любым видом транспорта. Без переплат и точно в срок!</div>
+              <!-- /.main-slider__descr -->
+              <button class="btn main-slider__btn">Быстрая заявка</button>
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- /.container -->
+          
+        </div>
+        <!-- /.main-slider__slide -->
+    </div>
+    <!-- /.main -->
 
-    <div class="container">
-      <div class="starter-template">
-        <h1>Bootstrap starter template</h1>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-      </div>
-    </div><!-- /.container -->
-
-
-    <!-- Bootstrap core JavaScript ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="../../../../assets/js/vendor/popper.min.js"></script>
-    <script src="../../../../dist/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+    <script src="libs/slick/slick.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/common.js"></script>
   </body>
 </html>

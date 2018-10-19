@@ -1,0 +1,47 @@
+.about
+  position: relative
+  display: flex
+  flex-wrap: wrap
+
+  &__img
+    position: relative
+    flex: 0 0 50%
+    width: 100%
+    min-height: 100%
+    background: #272e3curl(../img/about/ship.jpg) top/cover no-repeat
+
+    &:before
+      content: ''
+      position: absolute
+      display: block
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background: url(../img/about/dark-bg.png) top/cover no-repeat
+
+  &-block
+    padding: 165px 0 180px 57px
+    flex: 0 0 50%
+    color: #242830
+
+    &__title
+      margin-bottom: 3px
+      font-size: 23px
+      font-weight: 700
+      line-height: 24px
+      text-transform: uppercase
+      letter-spacing: 0.46px
+    
+    &__subtitle, &__descr
+      font-size: 15px
+      font-weight: 400
+      letter-spacing: 0.3px
+      line-height: 24px
+
+    &__subtitle
+      padding-bottom: 40px
+
+    &__descr
+      max-width: 460px
+

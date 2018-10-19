@@ -91,3 +91,35 @@
         transform: rotate(-135deg)
 
 
+/* Заголовок секций */
+.section-title
+  max-width: 200px
+  margin-left: auto
+  margin-right: auto
+  position: relative
+  color: #242830
+  font-size: 23px
+  font-weight: 700
+  line-height: 24px
+  text-transform: uppercase
+  letter-spacing: 0.46px
+  text-align: center
+
+
+  &::before, &::after
+    position: absolute
+    content: ''
+    width: 109px
+    height: 5px
+    background: url(../img/decor-line-gray.png) center no-repeat
+    top: 50%
+  
+  &::before
+    left: -70%
+    
+
+  &::after
+    right: -70%
+
+
+

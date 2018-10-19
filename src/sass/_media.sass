@@ -17,10 +17,40 @@
       background-image: none
       background-color: rgba(#f4f4f4, 0.1)
 
+
+  /* Эффект блока услуг */
+
+  .services
+
+    &-block
+
+      &:hover
+        background-color: #272e3c
+
+        & .services-img
+          display: none
+
+        & .services-img_active
+          display: inline-block
+
+      &:hover &__btn
+        display: block
+
+      &:hover &__title
+        font-weight: 700
+        color: #ffffff
+
+      &__btn
+
+        &:hover
+          background-color: #fff !important
+          color: #272e3c
+
 // @media (min-width: 1200px)
 
 
-@media (max-width: 1350px)
+
+@media (max-width: 1399px)
   /* Контент слайдера чуть правее */
   .main
 
@@ -28,6 +58,43 @@
 
       &__title, &__descr, &__btn
         margin-left: 5%
+
+    
+
+  /* Header */
+
+  .header
+
+
+    &-logo
+      margin-right: 150px
+
+
+      &::before, &::after
+        width: 79px
+      
+      &::before
+        left: -91px    
+
+      &::after
+        right: -91px
+
+
+    &__btn
+      margin-left: 20px
+
+
+  /* Services */
+
+  .services
+
+    &-block
+
+      &__img
+        flex-basis: 45%
+
+      &__text
+        flex-basis: 55%
 
 
 @media (max-width: 1199px)
@@ -47,23 +114,23 @@
 
 
     &-logo
-      margin-right: auto
+      margin-right: 96px
 
 
       &::before, &::after
-        width: 79px
+        width: 69px
       
       &::before
-        left: -91px
+        left: -61px
         
 
       &::after
-        right: -91px
+        right: -61px
 
 
     &__btn
-      margin-left: 20px
-      width: 186px
+      margin-left: 10px
+      width: 160px
 
     /* Menu */
 
@@ -71,6 +138,23 @@
 
       &__inp.active
         width: 180px
+
+
+  /* Services */
+
+  .services
+
+    &-block
+
+      &__btn
+        width: 136px
+        padding: 12px 0
+
+      &__img
+        flex-basis: 40%
+
+      &__text
+        flex-basis: 60%
   
  
 
@@ -107,39 +191,21 @@
 
   .header
 
+    &__descr
+      display: none
+
 
     &-logo
-      order: -1
       margin-right: 0
       margin-left: 0
       position: relative
       text-align: center
 
-      &::before, &::after
-        position: absolute
-        content: ''
-        width: 23px
-        height: 5px
-        background: url(../img/header/decor-line.png) center no-repeat
-        top: 40%
-        margin-top: -2.5px
-      
-      &::before
-        left: -11px
-        
-
-      &::after
-        right: -11px
-
-
-    &__btn
-      margin-left: 10px
-      width: 156px
+    &__contact
+      order: -1
 
 
     &-menu
-
-
 
       &__item:last-child
         flex: 0 0 100%
@@ -155,6 +221,35 @@
         right: 0
 
 
+  /* Services */
+
+  .services
+
+    .row
+      margin-top: -50px
+
+    &-blocks
+      padding-left: 13px
+      padding-right: 13px
+
+    &-block
+      flex: 0 0 49.5%
+
+      &__btn
+        height: auto
+        display: block
+        width: 136px
+        padding: 12px 0
+        border: 2px solid #272e3c
+        color: #272e3c
+
+      &__img
+        flex-basis: 50%
+
+      &__text
+        flex-basis: 50%
+
+
 /* ==============================   767 ================================= */
 
 @media (max-width: 767px)
@@ -165,9 +260,12 @@
   /* Header */
 
   .header
-    flex-direction: column
+    justify-content: center
+    flex-wrap: wrap
 
     &-logo
+      order: -1
+      flex-basis: 100%
 
       &__exp
         margin-bottom: 15px
@@ -178,14 +276,20 @@
         top: 30%
       
       &::before
-        left: -101px
+        left: 89px
       &::after
-        right: -101px
+        right: 89px
 
     &__descr
+      text-align: center
+      flex-basis: 100%
+      display: block
       margin-bottom: 20px
       font-size: 13px
       font-weight: 300
+
+    &__contact
+      order: 0
     
 
     &__btn
@@ -252,8 +356,7 @@
         max-width: none
 
       &__slide
-
-        padding-top: 240px
+        padding-top: 270px
 
       &__title
         font-size: 55px
@@ -267,18 +370,52 @@
 
 
 
-/* Стрелки слайдера */
+  /* Стрелки слайдера */
 
 
-.slider
+  .slider
 
-  &-arrow
+    &-arrow
 
-    &_left
-      left: 12px
+      &_left
+        left: 12px
 
-    &_right
-      right: 12px
+      &_right
+        right: 12px
+
+
+  /* Our Services */
+
+  .services
+
+    .row
+      margin-top: 0
+      z-index: 0
+  
+
+  /* Services */
+
+  .services
+    padding-bottom: 50px
+
+    &-blocks
+      padding-left: 0
+      padding-right: 0
+
+    &-block
+      margin-left: auto
+      margin-right: auto
+      flex: 0 0 75%
+
+      &__btn
+        width: 189px
+        padding: 14px 0
+
+      &__img
+        flex-basis: 50%
+
+      &__text
+        flex-basis: 50%
 
 
 
@@ -287,25 +424,35 @@
 /* ==============================   576 ================================= */
 
 @media (max-width: 575px)
+
+  /* Section - title */
+
+  .section-title
+    font-size: 20px
+
+    &::before, &::after
+
+      display: none
   
   /* Header */
 
   .header
 
     &-logo
+      max-width: 250px
 
       &__exp
         margin-bottom: 15px
 
       &::before, &::after
-        width: 29px
+        width: 50px
         height: 5px
         top: 30%
       
       &::before
-        left: -21px
+        left: 5%
       &::after
-        right: -21px
+        right: 5%
 
   /* Кнопка меню */
 
@@ -339,7 +486,7 @@
 
       &__slide
 
-        padding-top: 220px
+        padding-top: 250px
 
       &__title
         margin-bottom: 20px
@@ -368,18 +515,33 @@
   .slider
 
     &-arrow
-      width: 12px
-      background-size: contain
+      display: none !important
+  
 
+  /* Services */
 
-      &_left
-        left: 5px
+  .services
+    padding-bottom: 35px
 
+    &__head
+      padding-top: 20px
+      padding-bottom: 20px
 
-      &_right
-        right: 5px
+    &-block
+      max-width: 400px
+      flex: 0 0 90%
+      height: 160px
 
-    
+      &__btn
+        width: 140px
+        padding: 12px 0
+
+      &__img
+        flex-basis: 40%
+
+      &__text
+        flex-basis: 60%
+
 
   
 

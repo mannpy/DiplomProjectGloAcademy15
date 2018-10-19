@@ -44,17 +44,23 @@ $(document).ready(function(){
       headerMenu = $('.header-menu'),
       menuLink = $('.header-menu__link');
 
-
-console.log(menuLink);
-
   menuBtn.click(function() {
     menuBtn.toggleClass('active');
     headerMenu.toggleClass('active');
   });
 
-  menuLink.click(function() {
+  menuLink.click(function(e) {
     menuBtn.toggleClass('active');
     headerMenu.toggleClass('active');
+
+    // Scrolling
+    var linkhref = $(this).attr('href');
+
+    $('html, body').animate({
+      scrollTop: $(linkhref).offset().top
+    }, 1000);
+
+    e.preventDefault();
   });
 
 

@@ -111,6 +111,19 @@
     &__title, &__descr, &__btn
       margin-right: 3%
 
+  /* Partners */
+
+  .partners
+
+    
+    &-slider
+      max-width: 1140px
+
+    &-block
+        
+        &__img
+          height: 150px
+
 
 @media (max-width: 1199px)
 
@@ -199,6 +212,24 @@
 
     &__title, &__descr, &__btn
       margin-right: 5%
+
+
+  /* Partners */
+
+  .partners
+
+    
+    &-slider
+      max-width: 960px
+
+  /* Partners */
+
+  .partners
+
+    &-block
+        
+        &__img
+          height: 160px
   
  
 
@@ -347,6 +378,34 @@
 
     &__descr
       font-size: 15px
+
+
+  /* Partners */
+
+  .partners
+    padding-top: 30px
+
+    &-slider
+      max-width: 720px
+      padding-top: 0
+
+    &-block
+        
+        &__img
+          height: 160px
+          filter: none
+          border: 1px solid rgba(0, 0, 0, 0.06)
+
+          &:hover
+            box-shadow: none
+
+    .slick
+
+      &-dots
+
+          button
+            border: 2px solid rgba(#242830, 0.2)
+
 
 /* ==============================   767 ================================= */
 
@@ -595,6 +654,13 @@
       font-size: 15px
       margin-right: auto
 
+  /* Partners */
+
+  .partners
+
+    &-slider
+      max-width: 235px
+
 
 /* ==============================   576 ================================= */
 
@@ -777,6 +843,9 @@
     background-position-x: 35%
     padding-top: 80px
     padding-bottom: 90px
+
+    &.slick-dotted.slick-slider
+      margin-bottom: 0
 
     &__block
 

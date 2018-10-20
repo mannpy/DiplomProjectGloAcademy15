@@ -15,6 +15,32 @@
   background-color: transparent
   background-image: none
 
+/* Слайдер */
+
+.slick
+
+  &-dots
+
+    li
+      margin: 0
+
+      button
+
+        width: 14px
+        height: 14px
+        border: 2px solid #fff
+        border-radius: 50%
+
+        &::before
+          display: none
+
+    li.slick-active
+
+      button
+        border: transparent
+        background-color: #0b5e8f
+
+/* Стрелки слайдера */
 
 .slider
 
@@ -37,6 +63,8 @@
       right: 25px
       background: url(../img/slider/arrow-right.png) center no-repeat
 
+
+/* Кнопка Menu */
 
 .menu
 

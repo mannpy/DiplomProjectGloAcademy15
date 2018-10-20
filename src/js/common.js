@@ -28,6 +28,23 @@ $(document).ready(function(){
     nextArrow: '<div class="slider-arrow slider-arrow_right"></div>',
   });
 
+  $(".slider-section").slick({
+    prevArrow: '<div class="slider-arrow slider-arrow_left"></div>',
+    nextArrow: '<div class="slider-arrow slider-arrow_right"></div>',
+    responsive: [
+    {
+      breakpoint: 576,
+      settings: {
+        arrows: false,
+        dots: true,
+      }
+    },
+  ]
+  });
+
+
+
+
   // Кнопка поиска
   var headerMenuSearch = $(".header-menu__search"),
       headerMenuInp = $(".header-menu__inp");

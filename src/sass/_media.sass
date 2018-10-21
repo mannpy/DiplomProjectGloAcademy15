@@ -48,7 +48,14 @@
 
 // @media (min-width: 1200px)
 
+@media (max-width: 1800px)
 
+  /* Request section */
+
+  .request
+
+    &:after
+      top: 45%
 
 @media (max-width: 1399px)
   /* Контент слайдера чуть правее */
@@ -123,6 +130,24 @@
         
         &__img
           height: 150px
+
+    .slick
+
+      &-dots
+
+          button
+            border: 2px solid rgba(#242830, 0.2)
+
+  /* Request section */
+
+  .request
+
+    &:after
+      width: 420px
+      height: 110px
+      top: 55%
+      background-size: 420px 110px
+
 
 
 @media (max-width: 1199px)
@@ -230,6 +255,16 @@
         
         &__img
           height: 160px
+
+  /* Request section */
+
+  .request
+
+    &:after
+      width: 337px
+      height: 88px
+      background-size: 337px 88px
+      left: 10px
   
  
 
@@ -399,12 +434,15 @@
           &:hover
             box-shadow: none
 
-    .slick
+  /* Request section */
 
-      &-dots
+  .request
 
-          button
-            border: 2px solid rgba(#242830, 0.2)
+    &:after
+      width: 315px
+      height: 82px
+      top: 57%
+      background-size: 315px 82px
 
 
 /* ==============================   767 ================================= */
@@ -660,6 +698,26 @@
 
     &-slider
       max-width: 235px
+  
+
+  /* Request section */
+
+  .request
+
+    &:after
+      background: transparent
+
+    &-block
+      max-width: 500px
+
+    &-form
+
+      &__inp
+        flex: 0 0 100%
+
+      &__consent
+        text-align: center
+        font-size: 13px
 
 
 /* ==============================   576 ================================= */
@@ -867,6 +925,31 @@
 
       &-dots
         bottom: 35px
+
+
+  /* Request section */
+
+  .request
+    padding-top: 30px
+    padding-bottom: 35px
+
+    &:after
+      background: transparent
+
+    &-block
+      padding-left: 15px
+      padding-right: 15px
+      max-width: 400px
+
+    &-form
+
+      &__inp
+        flex: 0 0 100%
+        font-size: 14px
+
+      &__consent
+        text-align: center
+        font-size: 12px
 
 
 

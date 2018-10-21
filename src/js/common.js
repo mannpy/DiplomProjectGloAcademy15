@@ -57,6 +57,7 @@ $(document).ready(function(){
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 6000,
+        dots: true,
       }
     },
     {
@@ -65,6 +66,7 @@ $(document).ready(function(){
         slidesToShow: 3,
         autoplay: true,
         autoplaySpeed: 6000,
+        dots: true,
       }
     },
     {
@@ -122,11 +124,11 @@ $(document).ready(function(){
 
   /* Masked input */
 
-  // jQuery(function($){
-  //  $(".popup-form__input").mask("+7 (999) 999-99-99");
-  //  $(".main-form__input").mask("+7 (999) 999-99-99");
-  //  $(".offer-form__input").mask("+7 (999) 999-99-99");
-  // });
+  jQuery(function($){
+   $(".request-form__inp_tel").mask("+7 (999) 999-99-99");
+   // $(".main-form__input").mask("+7 (999) 999-99-99");
+   // $(".offer-form__input").mask("+7 (999) 999-99-99");
+  });
   
   // new WOW().init();
 

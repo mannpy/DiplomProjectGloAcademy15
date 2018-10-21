@@ -414,11 +414,11 @@ html {
 }
 
 .main-slide_first {
-  background: #272e3c url(../img/main/bg-first.png) 0 center/cover no-repeat;
+  background: #272e3c url(../img/main/bg-first-o.jpg) 0 center/cover no-repeat;
 }
 
 .main-slide_second {
-  background: #272e3c url(../img/main/bg-second.png) 0 center/cover no-repeat;
+  background: #272e3c url(../img/main/bg-second-o.jpg) 0 center/cover no-repeat;
 }
 
 .header, .header-menu {
@@ -791,18 +791,7 @@ html {
   flex: 0 0 50%;
   width: 100%;
   min-height: 100%;
-  background: #272e3c url(../img/about/ship.jpg) top/cover no-repeat;
-}
-
-.about__img:before {
-  content: '';
-  position: absolute;
-  display: block;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url(../img/about/dark-bg.png) top/cover no-repeat;
+  background: #272e3c url(../img/about/ship-o.jpg) top/cover no-repeat;
 }
 
 .about-block {
@@ -937,7 +926,7 @@ html {
 .slider-section {
   padding-top: 155px;
   padding-bottom: 139px;
-  background: #272e3c url(../img/slider-section/bg.png) center/cover no-repeat;
+  background: #272e3c url(../img/slider-section/bg-o.jpg) center/cover no-repeat;
 }
 
 .slider-section__block {

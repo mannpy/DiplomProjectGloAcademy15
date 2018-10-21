@@ -345,7 +345,7 @@ html {
   height: 910px;
   background-color: #272e3c;
   position: relative;
-  z-index: 1;
+  z-index: 2;
   /* Слайдер занимает весь блок main и находится сзади */
   /* Фон двух слайдов */
 }
@@ -1021,7 +1021,7 @@ html {
 .request {
   position: relative;
   padding-top: 35px;
-  padding-bottom: 54px;
+  padding-bottom: 50px;
   background: #e6e6e6 url(../img/request/request-bg.jpg) 0 top/cover no-repeat;
 }
 
@@ -1051,7 +1051,7 @@ html {
 
 .request-form {
   position: relative;
-  z-index: 2;
+  z-index: 1;
   color: #303030;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1132,6 +1132,151 @@ html {
   font-weight: 400;
   line-height: 24px;
   color: #303030;
+  letter-spacing: 0.3px;
+}
+
+.footer {
+  margin-left: -15px;
+  margin-right: -15px;
+  padding-top: 59px;
+  padding-bottom: 61px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  color: #1f1f1f;
+}
+
+.footer-logo {
+  color: #116292;
+  text-align: center;
+}
+
+.footer-logo__abbr {
+  font-family: "PalatinoLinotype-Roman", serif;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+
+.footer-logo__abbr a {
+  color: #116292;
+}
+
+.footer-logo__exp {
+  font-family: "Roboto";
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  text-transform: none;
+}
+
+.footer__menu {
+  padding-right: 30px;
+  padding-left: 42px;
+  -webkit-flex-basis: 53%;
+  -ms-flex-preferred-size: 53%;
+  flex-basis: 53%;
+}
+
+.footer-menu {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.32px;
+}
+
+.footer-menu__items {
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  max-width: 632px;
+}
+
+.footer-menu__item {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-menu__link {
+  color: #1f1f1f;
+  position: relative;
+}
+
+.footer-menu__link::after {
+  position: absolute;
+  bottom: -11px;
+  left: 0;
+  content: '';
+  background-color: #0b5e8f;
+  display: block;
+  height: 2px;
+  width: 0;
+  -webkit-transition: width .3s ease-in-out;
+  -o-transition: width .3s ease-in-out;
+  -moz-transition: width .3s ease-in-out;
+  transition: width .3s ease-in-out;
+}
+
+.footer-menu__link:hover::after, .footer-menu__link:focus::after {
+  width: 40px;
+}
+
+.footer-menu__link.active::after {
+  width: 40px;
+}
+
+.footer-devs {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.footer-devs__text {
+  margin-right: 15px;
+  color: #303030;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
   letter-spacing: 0.3px;
 }
 
@@ -1319,6 +1464,14 @@ html {
     background-size: 337px 88px;
     left: 10px;
   }
+  /* Footer */
+  .footer__menu {
+    padding-right: 0;
+    padding-left: 0;
+    -webkit-flex-basis: 55%;
+    -ms-flex-preferred-size: 55%;
+    flex-basis: 55%;
+  }
 }
 
 /* ==============================   992 ================================= */
@@ -1485,6 +1638,27 @@ html {
     -moz-background-size: 315px 82px;
     -o-background-size: 315px 82px;
     background-size: 315px 82px;
+  }
+  /* Footer */
+  .footer {
+    padding-top: 50px;
+    padding-bottom: 55px;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .footer__menu {
+    margin-bottom: 20px;
+    padding-right: 0;
+    padding-left: 0;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    -webkit-box-ordinal-group: 0;
+    -webkit-order: -1;
+    -moz-box-ordinal-group: 0;
+    -ms-flex-order: -1;
+    order: -1;
   }
 }
 
@@ -1771,6 +1945,16 @@ html {
     text-align: center;
     font-size: 13px;
   }
+  /* Footer */
+  .footer {
+    padding-top: 40px;
+    padding-bottom: 45px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .footer__menu {
+    display: none;
+  }
 }
 
 /* ==============================   576 ================================= */
@@ -1980,6 +2164,14 @@ html {
   .request-form__consent {
     text-align: center;
     font-size: 12px;
+  }
+  /* Footer */
+  .footer {
+    padding-top: 30px;
+    padding-bottom: 35px;
+  }
+  .footer__menu {
+    display: none;
   }
 }
 

@@ -1,6 +1,13 @@
 <?php 
 
-$phone = $_POST['user_phone'];
+$from = $_POST['from'];
+$to = $_POST['to'];
+$name = $_POST['name'];
+$phone = $_POST['tel'];
+$email = $_POST['email'];
+$feedback = $_POST['feedback'];
+$form = $_POST['form'];
+
 
 require_once('phpmailer/PHPMailerAutoload.php');
 $mail = new PHPMailer;
@@ -16,7 +23,7 @@ $mail->Password = 'binmail$*ru3';                           // Наш парол
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465;                                    // TCP port to connect to
  
-$mail->setFrom('bin_trash@bk.ru', 'Добрый картон инфо');   // От кого письмо 
+$mail->setFrom('bin_trash@bk.ru', 'LTS Info');   // От кого письмо 
 $mail->addAddress('maaz112@yandex.ru');     // Add a recipient
 //$mail->addAddress('ellen@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
@@ -26,11 +33,54 @@ $mail->addAddress('maaz112@yandex.ru');     // Add a recipient
 //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 $mail->isHTML(true);                                  // Set email format to HTML
 
-$mail->Subject = 'Оставлена новая заявка на обратный звонок';
-$mail->Body    = '
-  Пользователь оставил свои данные <br> 
-  Телефон: ' . $phone . '';
-$mail->AltBody = 'Это альтернативный текст';
+
+// Быстрая заявка
+
+if ($form === "quickOrder" && isset($from) && $from !== '' && isset($to) && $to !== '') {
+  $mail->Subject = 'Оставлена новая быстрая заявка';
+  $mail->Body    = '
+    Пользователь: <b>' . $name . '</b><br> 
+    Телефон: ' . $phone . '<br>
+    От: ' . $from . '<br>
+    До: ' . $to;
+  $mail->AltBody = 'Это альтернативный текст';
+}
+
+// Заявка на обратный звонок
+
+if ($form === "callOrder" && isset($name) && $name !== '' && isset($phone) && $phone !== '') {
+  $mail->Subject = 'Оставлена новая заявка на обратный звонок';
+  $mail->Body    = '
+    Пользователь: <b>' . $name . '</b><br> 
+    Телефон: ' . $phone;
+  $mail->AltBody = 'Это альтернативный текст';
+}
+
+// Заявка на расчет услуг
+
+if ($form === "requestBlock" && isset($from) && $from !== '' && isset($to) && $to !== '' && isset($name) && $name !== '' && isset($phone) && $phone !== '') {
+  $mail->Subject = 'Оставлена новая заявка на расчет услуг';
+  $mail->Body    = '
+    Пользователь: <b>' . $name . '</b><br> 
+    Телефон: ' . $phone . '<br>
+    От: ' . $from . '<br>
+    До: ' . $to;
+  $mail->AltBody = 'Это альтернативный текст';
+}
+
+// Новый отзыв
+
+if ($form === "feedbackForm" && isset($feedback) && $feedback !== '' && isset($name) && $name !== '' && isset($email) && $email !== '') {
+  $mail->Subject = 'Оставлен новый отзыв';
+  $mail->Body    = '
+    Пользователь: <b>' . $name . '</b><br> 
+    Email: ' . $email . '<br>
+    Сообщение: <br><br>' . $feedback;
+  $mail->AltBody = 'Это альтернативный текст';
+}
+
+
+
 
 if(!$mail->send()) {
     return false;

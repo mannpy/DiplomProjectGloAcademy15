@@ -7,6 +7,7 @@ $(document).ready(function(){
   $(".main-slider__btn, .slider-section__btn").on("click", function() {
     $(".overlay").show();
     $("#quickOrder").show();
+    yaCounter50835371.reachGoal('quickOrderBtn');
   });
   
   // Заказать звонок
@@ -14,29 +15,98 @@ $(document).ready(function(){
   $(".header__btn").on("click", function() {
     $(".overlay").show();
     $("#callOrder").show();
+    yaCounter50835371.reachGoal('CallOrderBtn');
   });
 
   // Закрыть Popup
 
   $(".popup__close").on("click", function() {
-    $(".overlay").hide();
     $(".overlay, #quickOrder, #callOrder, #thanks").hide();
   });
 
 
   /* Отправка форм */
 
+  // Быстрая заявка
+
   $('#quickOrder form').submit(function(event) {
     event.preventDefault();
     $.ajax({
       type: "POST",
       url: "libs/mailer/smart.php",
-      data: $(this).serialize()
+      data: $(this).serialize() + "&form=quickOrder",
     }).done(function() {
       $(this).find("input").val("");
-      $("#quickOrder form").hide();
+      $(".popup__message").text(" оставленную заявку.");
+      $(".popup__text.post").text("Скоро с вами свяжутся наши сотрудники.");
+      $("#quickOrder").hide();
       $("#thanks").show();
       $("form").trigger("reset");
+      yaCounter50835371.reachGoal('QuickOrderFormGoal');
+    });
+    return false;
+  });
+
+  // Заявка на обратный звонок
+
+
+  $('#callOrder form').submit(function(event) {
+    event.preventDefault();
+    $.ajax({
+      type: "POST",
+      url: "libs/mailer/smart.php",
+      data: $(this).serialize() + "&form=callOrder",
+    }).done(function() {
+      $(this).find("input").val("");
+      $(".popup__message").text(" оставленную заявку.");
+      $(".popup__text.post").text("Скоро с вами свяжутся наши сотрудники.");
+      $("#callOrder").hide();
+      $("#thanks").show();
+      $("form").trigger("reset");
+      yaCounter50835371.reachGoal('CallOrderFormGoal');
+    });
+    return false;
+  });
+
+
+  // Заявка на расчет услуг
+
+  $('.request-block form').submit(function(event) {
+    event.preventDefault();
+    $.ajax({
+      type: "POST",
+      url: "libs/mailer/smart.php",
+      data: $(this).serialize() + "&form=requestBlock",
+    }).done(function() {
+      $(this).find("input").val("");
+      $(".popup__message").text(" оставленную заявку.");
+      $(".popup__text.post").text("Скоро с вами свяжутся наши сотрудники.");
+      $(".overlay").show();
+      $("#thanks").show();
+      $("form").trigger("reset");
+      yaCounter50835371.reachGoal('requestBlockFormGoal');
+    });
+    return false;
+  });
+
+  // Отправка отзыва
+
+  
+  $('.leave-feedback form').submit(function(event) {
+    event.preventDefault();
+    $.ajax({
+      type: "POST",
+      url: "libs/mailer/smart.php",
+      data: $(this).serialize() + "&form=feedbackForm",
+    }).done(function() {
+      $(this).find("input").val("");
+      $(".popup__message").text(" оставленный отзыв.");
+      $(".popup__text.post").text("Ваше отзыв появится после проверки");
+      $('.leave-feedback').hide();
+      $(".overlay").show();
+      $("#thanks").show();
+      $("form").trigger("reset");
+      yaCounter50835371.reachGoal('FeedbackFormGoal');
     });
     return false;
   });

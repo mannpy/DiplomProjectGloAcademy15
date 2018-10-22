@@ -126,7 +126,7 @@ $(document).ready(function(){
 
   jQuery(function($){
    $(".request-form__inp_tel").mask("+7 (999) 999-99-99");
-   // $(".main-form__input").mask("+7 (999) 999-99-99");
+   // $(".leave-feedback__inp").mask("+7 (999) 999-99-99");
    // $(".offer-form__input").mask("+7 (999) 999-99-99");
   });
   

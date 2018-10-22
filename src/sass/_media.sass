@@ -48,6 +48,9 @@
 
 // @media (min-width: 1200px)
 
+
+
+
 @media (max-width: 1800px)
 
   /* Request section */
@@ -147,6 +150,21 @@
       height: 110px
       top: 55%
       background-size: 420px 110px
+
+  /* Our-services Page */
+
+  .our-services
+
+    /* Sidebar */
+
+    .sidebar
+
+      &-item
+
+        &__text
+
+          font-size: 15px
+
 
 
 
@@ -277,6 +295,35 @@
       padding-left: 0
       flex-basis: 55%
   
+  /* Our-services Page */
+
+  .our-services
+
+    /* Sidebar */
+
+    .sidebar
+      flex-basis: 31%
+
+      &-item
+
+        &__img
+          flex-basis: 17%
+
+        &__text
+          flex-basis: 83%
+          font-size: 14px
+
+    /* Content */
+
+    .content
+      flex-basis: 69%
+
+      &-table
+        font-size: 13px
+        font-weight: 400
+
+        &__row
+          height: 46px
  
 
 /* ==============================   992 ================================= */
@@ -307,6 +354,16 @@
       &__slide
         padding-top: 270px
 
+
+    &_dark-head
+      padding-bottom: 0
+      height: 250px
+
+      &-menu
+
+        &__items
+          margin-bottom: 0
+
   
   /* Header */
 
@@ -335,11 +392,17 @@
       &__item:last-child > &__search
         margin-left: auto
 
-      &__item:last-child >&__inp
+      &__item:last-child > &__inp
         padding-left: 10px
-        width: 300px
         left: auto
-        right: 0
+        right: 5px
+        top: 1px
+
+      &__item:last-child > &__inp.active
+        
+        width: 300px
+        
+        
 
 
   /* Services */
@@ -471,6 +534,61 @@
       order: -1
 
 
+  /* Our-services Page */
+
+  .our-services
+    padding-top: 50px
+    padding-bottom: 105px
+
+    .row
+      flex-wrap: wrap
+
+    /* Sidebar */
+
+    .sidebar
+      flex-basis: 50%
+      margin-left: auto
+      margin-right: auto
+
+      &__title
+        text-align: center
+
+      &-menu
+        margin-bottom: 40px
+
+      &-item
+
+        /* Отключаем ховер эффект */
+          
+        &:hover:not(.active)
+          background-image: none
+
+          & .sidebar-img
+            filter: invert(70%)
+
+          & .sidebar-item__text
+            color: #242830
+
+        &__img
+          flex-basis: 20%
+
+        &__text
+          flex-basis: 80%
+          font-size: 16px
+
+    /* Content */
+
+    .content
+      flex-basis: 100%
+
+      &-table
+        font-size: 13px
+        font-weight: 400
+
+        &__row
+          height: 46px
+
+
 /* ==============================   767 ================================= */
 
 @media (max-width: 767px)
@@ -582,12 +700,19 @@
       &__title
         font-size: 55px
 
-
-
     .slick
 
       &-dots
         bottom: 35px
+
+
+    /* В странице page.html */
+    
+    &_dark-head
+      height: 240px
+
+      .header
+        margin-bottom: 20px
 
 
 
@@ -731,7 +856,7 @@
   .request
 
     &:after
-      background: transparent
+      display: none
 
     &-block
       max-width: 500px
@@ -756,6 +881,67 @@
     &__menu
       display: none
 
+
+
+  /* Our-services Page */
+
+  .our-services
+    padding-top: 40px
+    padding-bottom: 65px
+
+
+    /* Sidebar */
+
+    .sidebar
+      flex-basis: 70%
+
+    /* Content */
+
+    .content
+      padding-left: 15px
+      padding-right: 15px
+
+      &__title
+        text-align: center
+
+      &__text, &-gallery, &-feedback
+        margin-bottom: 30px
+
+
+      &__text
+        text-indent: 2rem
+        text-align: justify
+
+      /* Gallery */
+        
+      &-gallery
+
+        &__img
+          margin-left: auto
+          margin-right: auto
+          flex: 0 0 75%
+
+      /* Оставить отзыв */
+
+      .leave-feedback
+        margin-bottom: 0
+
+        &__inp
+          flex: 0 0 100%
+          
+          &:first-child
+            margin-right: 0
+
+        &__btn
+          margin-left: auto
+          margin-right: auto
+
+      /* Table */
+
+      &__table
+        display: none
+
+      
 
 
 /* ==============================   576 ================================= */
@@ -843,6 +1029,12 @@
 
       &-dots
         bottom: 35px
+
+
+    /* В странице page.html */
+    
+    &_dark-head
+      height: 240px
 
 
 
@@ -998,6 +1190,60 @@
 
     &__menu
       display: none
+
+
+  /* Our-services Page */
+
+  .our-services
+    padding-top: 30px
+    padding-bottom: 45px
+
+
+    /* Sidebar */
+
+    .sidebar
+      max-width: 340px
+      flex-basis: 90%
+
+      &-menu
+        margin-bottom: 30px
+
+      &-item
+        height: 55px
+
+        &__img
+          flex-basis: 18%
+
+        &__text
+          flex-basis: 82%
+          font-size: 14px
+
+
+    /* Content */
+
+    .content
+
+      &__title
+        line-height: 30px
+
+      /* Gallery */
+        
+      &-gallery
+
+        &__img
+          max-width: 390px
+          flex: 0 0 100%
+
+      /* Отзывы */
+          
+      &-feedback
+
+        .feedback-block
+
+          &__text
+            font-size: 15px
+
+
 
 
 

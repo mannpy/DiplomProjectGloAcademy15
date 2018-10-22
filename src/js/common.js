@@ -1,23 +1,46 @@
 $(document).ready(function(){
+
+  /* Кнопки */
+
+  // Быстрая заявка
+
+  $(".main-slider__btn, .slider-section__btn").on("click", function() {
+    $(".overlay").show();
+    $("#quickOrder").show();
+  });
   
+  // Заказать звонок
+
+  $(".header__btn").on("click", function() {
+    $(".overlay").show();
+    $("#callOrder").show();
+  });
+
+  // Закрыть Popup
+
+  $(".popup__close").on("click", function() {
+    $(".overlay").hide();
+    $(".overlay, #quickOrder, #callOrder, #thanks").hide();
+  });
+
 
   /* Отправка форм */
 
-  // $('form').submit(function(event) {
-  //   event.preventDefault();
-  //   $.ajax({
-  //     type: "POST",
-  //     url: "libs/mailer/smart.php",
-  //     data: $(this).serialize()
-  //   }).done(function() {
-  //     $(this).find("input").val("");
-  //     $("#overlay-form").hide();
-  //     $("#overlay-thanks").show();
-  //     $("form").trigger("reset");
-  //     yaCounter50716078.reachGoal('sentForm');
-  //   });
-  //   return false;
-  // });
+  $('#quickOrder form').submit(function(event) {
+    event.preventDefault();
+    $.ajax({
+      type: "POST",
+      url: "libs/mailer/smart.php",
+      data: $(this).serialize()
+    }).done(function() {
+      $(this).find("input").val("");
+      $("#quickOrder form").hide();
+      $("#thanks").show();
+      $("form").trigger("reset");
+    });
+    return false;
+  });
+
   
   /* Слайдеры */
 

@@ -165,6 +165,13 @@
 
           font-size: 15px
 
+  /* Modal */
+
+  .overlay
+
+    .popup
+      top: 25% 
+
 
 
 
@@ -588,6 +595,19 @@
         &__row
           height: 46px
 
+  /* Modal */
+
+  .overlay
+
+    .popup
+      max-width: 650px
+
+      &__form
+        max-width: 600px
+
+      &__close
+        top: -40px
+
 
 /* ==============================   767 ================================= */
 
@@ -941,6 +961,40 @@
       &__table
         display: none
 
+
+
+  /* Modal */
+
+  .overlay
+
+    .popup
+      top: 20%
+      padding-top: 30px
+      padding-bottom: 25px
+      max-width: 530px
+
+      &__title
+        margin-bottom: 18px
+
+      &__form
+        max-width: 450px
+
+        .request-form
+
+          &__consent
+            padding-left: 40px
+            padding-right: 40px
+
+          &__inp
+            height: 35px
+            margin-bottom: 20px
+
+
+          &__btn
+            margin-bottom: 12px
+
+      
+
       
 
 
@@ -1243,7 +1297,53 @@
           &__text
             font-size: 15px
 
+  /* Modal */
 
+  .overlay
+
+    .popup
+      padding-top: 20px
+      padding-bottom: 20px
+      max-width: 90%
+
+      &__title
+        margin-bottom: 13px
+
+      &__close
+        top: -10px
+        right: 1px
+        font-size: 35px
+        color: $dark-bg
+
+      &__text
+        font-size: 20px
+        color: #242830
+        letter-spacing: 0.46px
+        text-align: center
+
+        &:last-child
+          font-size: 18px
+          margin-left: auto
+          margin-right: auto
+          max-width: 450px
+          padding-top: 10px
+
+      &__message
+        display: block
+        font-weight: 700
+
+      &__form
+        max-width: 90%
+
+        .request-form
+
+          &__consent
+            padding-left: 0
+            padding-right: 0
+
+
+      &#quickOrder
+        top: 12%
 
 
 

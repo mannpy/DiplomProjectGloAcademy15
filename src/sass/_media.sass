@@ -364,7 +364,7 @@
 
     &_dark-head
       padding-bottom: 0
-      height: 250px
+      height: 225px
 
       &-menu
 
@@ -392,22 +392,9 @@
 
     &-menu
 
-      &__item:last-child
-        flex: 0 0 100%
-        margin-top: 20px
-
-      &__item:last-child > &__search
-        margin-left: auto
-
       &__item:last-child > &__inp
-        padding-left: 10px
-        left: auto
-        right: 5px
-        top: 1px
+        display: none
 
-      &__item:last-child > &__inp.active
-        
-        width: 300px
         
         
 
@@ -714,6 +701,9 @@
         margin-left: 0
         max-width: none
 
+      &__btn
+        padding: 0
+
       &__slide
         padding-top: 270px
 
@@ -918,6 +908,7 @@
     /* Content */
 
     .content
+      overflow: auto
       padding-left: 15px
       padding-right: 15px
 
@@ -929,8 +920,7 @@
 
 
       &__text
-        text-indent: 2rem
-        text-align: justify
+        text-align: center
 
       /* Gallery */
         
@@ -944,7 +934,7 @@
       /* Оставить отзыв */
 
       .leave-feedback
-        margin-bottom: 0
+        margin-bottom: 20px
 
         &__inp
           flex: 0 0 100%
@@ -959,7 +949,10 @@
       /* Table */
 
       &__table
-        display: none
+        overflow: auto
+
+      &-table
+        width: 700px
 
 
 
@@ -1056,10 +1049,6 @@
         margin-right: 0
         padding-right: 5px
         padding-left: 5px
-
-      &__title, &__descr, &__btn
-        margin-left: 0
-        max-width: none
 
       &__slide
 

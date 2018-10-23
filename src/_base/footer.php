@@ -3,7 +3,7 @@
         <div class="footer">
           <div class="footer-logo footer__logo">
             <div class="footer-logo__abbr">
-              <a href="/">
+              <a href="index.php">
                 LTS
               </a>
               <span class="footer-logo__exp">Large Transport Ships</span>

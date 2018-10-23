@@ -587,6 +587,7 @@ html {
 }
 
 .header-menu__search {
+  cursor: pointer;
   position: relative;
   z-index: 2;
   display: -webkit-box;
@@ -1926,7 +1927,7 @@ html {
   }
   .main_dark-head {
     padding-bottom: 0;
-    height: 250px;
+    height: 225px;
   }
   .main_dark-head-menu__items {
     margin-bottom: 0;
@@ -1948,25 +1949,8 @@ html {
     -ms-flex-order: -1;
     order: -1;
   }
-  .header-menu__item:last-child {
-    -webkit-box-flex: 0;
-    -webkit-flex: 0 0 100%;
-    -moz-box-flex: 0;
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-    margin-top: 20px;
-  }
-  .header-menu__item:last-child > .header-menu__search {
-    margin-left: auto;
-  }
   .header-menu__item:last-child > .header-menu__inp {
-    padding-left: 10px;
-    left: auto;
-    right: 5px;
-    top: 1px;
-  }
-  .header-menu__item:last-child > .header-menu__inp.active {
-    width: 300px;
+    display: none;
   }
   /* Services */
   .services .row {
@@ -2301,6 +2285,9 @@ html {
     margin-left: 0;
     max-width: none;
   }
+  .main-slider__btn {
+    padding: 0;
+  }
   .main-slider__slide {
     padding-top: 270px;
   }
@@ -2487,6 +2474,7 @@ html {
     flex-basis: 70%;
   }
   .our-services .content {
+    overflow: auto;
     padding-left: 15px;
     padding-right: 15px;
     /* Gallery */
@@ -2500,8 +2488,7 @@ html {
     margin-bottom: 30px;
   }
   .our-services .content__text {
-    text-indent: 2rem;
-    text-align: justify;
+    text-align: center;
   }
   .our-services .content-gallery__img {
     margin-left: auto;
@@ -2513,7 +2500,7 @@ html {
     flex: 0 0 75%;
   }
   .our-services .content .leave-feedback {
-    margin-bottom: 0;
+    margin-bottom: 20px;
   }
   .our-services .content .leave-feedback__inp {
     -webkit-box-flex: 0;
@@ -2530,7 +2517,10 @@ html {
     margin-right: auto;
   }
   .our-services .content__table {
-    display: none;
+    overflow: auto;
+  }
+  .our-services .content-table {
+    width: 700px;
   }
   /* Modal */
   .overlay .popup {
@@ -2608,10 +2598,6 @@ html {
     margin-right: 0;
     padding-right: 5px;
     padding-left: 5px;
-  }
-  .main-slider__title, .main-slider__descr, .main-slider__btn {
-    margin-left: 0;
-    max-width: none;
   }
   .main-slider__slide {
     padding-top: 250px;

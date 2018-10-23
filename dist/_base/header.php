@@ -12,7 +12,7 @@
           </div>
           <!-- /.header__logo -->
           <div class="header__contact">
-            <a href="tel:7987655-25-25">7 (987) 655-25-25</a>
+            <a href="tel:79876552525">7 (987) 655-25-25</a>
           </div>
           <!-- /.header__contact -->
           <div class="header__call">

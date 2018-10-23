@@ -87,8 +87,8 @@
               <!-- /.leave-feedback__form -->
             </div>
             <!-- /.leave-feedback content__leave-feedback -->
+            <div class="content__title">Таблица</div>
             <div class="content__table">
-              <div class="content__title">Таблица</div>
               <table class="content-table">
                 <thead class="content-table__head">
                   <tr class="content-table__row">

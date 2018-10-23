@@ -2287,6 +2287,7 @@ html {
   }
   .main-slider__btn {
     padding: 0;
+    line-height: 1;
   }
   .main-slider__slide {
     padding-top: 270px;

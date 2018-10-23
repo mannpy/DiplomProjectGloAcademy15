@@ -60,9 +60,9 @@
               <div class="content__title">Отзывы</div>
               <!-- /.content__title -->
               <div class="feedback-block content-feedback__block">
-                <div class="feedback-block__username">Ольга Петрова</div>
+                <div class="feedback-block__username">Саша Макон</div>
                 <!-- /.feedback-block__username -->
-                <div class="feedback-block__text">Спасибо вашей компании за сотрудничество, постоянно доказываете, что с вами очень приятно работать, хорошая скорость и все товары всегда в сохранности. Всем советую.</div>
+                <div class="feedback-block__text">С компанией LTS работаем около года. Сейчас перевозим товары в Россию из Китая и стран СНГ. Груз хрупкий, всё приходит в целости. Очень удобно следить из офиса за продвижением машины с товаром. Сроки не срываются, документация в порядке. Собираемся заключать договора в странах Европы, Обратимся снова в эту же компанию для доставки.</div>
                 <!-- /.feedback-block__text -->
               </div>
               <!-- /.feedback-block content-feedback__block -->

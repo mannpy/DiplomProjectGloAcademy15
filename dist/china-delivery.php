@@ -60,16 +60,16 @@
               <div class="content__title">Отзывы</div>
               <!-- /.content__title -->
               <div class="feedback-block content-feedback__block">
-                <div class="feedback-block__username">Ольга Петрова</div>
+                <div class="feedback-block__username">Кирилл Петров</div>
                 <!-- /.feedback-block__username -->
                 <div class="feedback-block__text">Спасибо вашей компании за сотрудничество, постоянно доказываете, что с вами очень приятно работать, хорошая скорость и все товары всегда в сохранности. Всем советую.</div>
                 <!-- /.feedback-block__text -->
               </div>
               <!-- /.feedback-block content-feedback__block -->
               <div class="feedback-block content-feedback__block">
-                <div class="feedback-block__username">Ольга Петрова</div>
+                <div class="feedback-block__username">Ольга Жукова</div>
                 <!-- /.feedback-block__username -->
-                <div class="feedback-block__text">Спасибо вашей компании за сотрудничество, постоянно доказываете, что с вами очень приятно работать, хорошая скорость и все товары всегда в сохранности. Всем советую.</div>
+                <div class="feedback-block__text">Работаем с данной компанией уже давно. Сотрудники вежливые, информацию предоставляют четко и ясно, с поставками никогда не опаздывали. Предлагают разные логистические решения перевозки грузов. Возят, кажется, все.. и любыми видами транспорта. Кстати, что не мало важно, предлагают сразу и страхование и таможенное оформление. Основные направления которыми мы пользовались это Китай и Польша, но возит компания и из других стран Европы (Германии, Австрии, Швейцарии и тд) в Россию и страны СНГ, из Китая и Монголии в Россию, Казахстан и страны СНГ и по любым странам внутри Европы. Сервис на высоте!</div>
                 <!-- /.feedback-block__text -->
               </div>
               <!-- /.feedback-block content-feedback__block -->

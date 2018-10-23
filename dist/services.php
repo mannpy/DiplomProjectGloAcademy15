@@ -60,16 +60,16 @@
               <div class="content__title">Отзывы</div>
               <!-- /.content__title -->
               <div class="feedback-block content-feedback__block">
-                <div class="feedback-block__username">Ольга Петрова</div>
+                <div class="feedback-block__username">Денис Потапов</div>
                 <!-- /.feedback-block__username -->
-                <div class="feedback-block__text">Спасибо вашей компании за сотрудничество, постоянно доказываете, что с вами очень приятно работать, хорошая скорость и все товары всегда в сохранности. Всем советую.</div>
+                <div class="feedback-block__text">Все супер быстро и надёжно и что самое главное это отношение к клиенту я очень доволен и приятно удивлен обращайтесь не пожалеете </div>
                 <!-- /.feedback-block__text -->
               </div>
               <!-- /.feedback-block content-feedback__block -->
               <div class="feedback-block content-feedback__block">
-                <div class="feedback-block__username">Ольга Петрова</div>
+                <div class="feedback-block__username">Виталий Громов</div>
                 <!-- /.feedback-block__username -->
-                <div class="feedback-block__text">Спасибо вашей компании за сотрудничество, постоянно доказываете, что с вами очень приятно работать, хорошая скорость и все товары всегда в сохранности. Всем советую.</div>
+                <div class="feedback-block__text">Привозил с помощью данной конторы партию промышленных станков из США. Грамотно объясняют, советуют свои логистические схемы. Привезли в срок, претензий нет.</div>
                 <!-- /.feedback-block__text -->
               </div>
               <!-- /.feedback-block content-feedback__block -->

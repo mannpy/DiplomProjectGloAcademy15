@@ -66,6 +66,22 @@ button:active, button:hover, button:focus, input:active, input:hover, input:focu
   outline-offset: 0;
 }
 
+input:invalid {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+input:-moz-submit-invalid {
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+input:-moz-ui-invalid {
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
 button:hover {
   cursor: pointer;
 }
@@ -2230,7 +2246,7 @@ html {
   }
   .header-menu {
     display: none;
-    background-color: rgba(4, 32, 48, 0.8);
+    background-color: rgba(4, 32, 48, 0.9);
     margin: 0;
     position: fixed;
     top: 0;
@@ -2257,7 +2273,9 @@ html {
     max-width: none;
   }
   .header-menu__item {
-    margin-bottom: 50px;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+    font-size: 35px;
   }
   .header-menu__link {
     color: #fff;

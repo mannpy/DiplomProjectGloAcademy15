@@ -60,16 +60,16 @@
               <div class="content__title">Отзывы</div>
               <!-- /.content__title -->
               <div class="feedback-block content-feedback__block">
-                <div class="feedback-block__username">Ольга Петрова</div>
+                <div class="feedback-block__username">Валентина Лебедь</div>
                 <!-- /.feedback-block__username -->
-                <div class="feedback-block__text">Спасибо вашей компании за сотрудничество, постоянно доказываете, что с вами очень приятно работать, хорошая скорость и все товары всегда в сохранности. Всем советую.</div>
+                <div class="feedback-block__text">Действительно хорошая компания, грузы из Германии для нашей фирмы доставляют быстро, плюс в целости и сохранности. </div>
                 <!-- /.feedback-block__text -->
               </div>
               <!-- /.feedback-block content-feedback__block -->
               <div class="feedback-block content-feedback__block">
-                <div class="feedback-block__username">Ольга Петрова</div>
+                <div class="feedback-block__username">Андрей Кудряшев</div>
                 <!-- /.feedback-block__username -->
-                <div class="feedback-block__text">Спасибо вашей компании за сотрудничество, постоянно доказываете, что с вами очень приятно работать, хорошая скорость и все товары всегда в сохранности. Всем советую.</div>
+                <div class="feedback-block__text">Наши компании сотрудничают уже около года, и у нас нет никаких претензий. Мы производим перевозки из Германии и Италии и это одна из самых опытных транспортных компании, которая прекрасно знает свои обязанности</div>
                 <!-- /.feedback-block__text -->
               </div>
               <!-- /.feedback-block content-feedback__block -->
